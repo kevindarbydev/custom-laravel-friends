@@ -16,7 +16,7 @@ class Friendship extends Model
      */
     protected $guarded = ['id', 'created_at', 'updated_at'];
     protected $with = ['recipient', 'sender'];
-
+    protected $fillable = ['recipient', 'sender','id', 'created_at', 'updated_at'];
     /**
      * @param  array  $attributes
      */
